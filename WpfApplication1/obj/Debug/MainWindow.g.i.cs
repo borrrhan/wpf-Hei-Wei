@@ -41,7 +41,7 @@ namespace WpfApplication1 {
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 12 "..\..\MainWindow.xaml"
+        #line 13 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Border Height;
         
@@ -49,7 +49,7 @@ namespace WpfApplication1 {
         #line hidden
         
         
-        #line 13 "..\..\MainWindow.xaml"
+        #line 14 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock HeightNumber;
         
@@ -57,7 +57,7 @@ namespace WpfApplication1 {
         #line hidden
         
         
-        #line 17 "..\..\MainWindow.xaml"
+        #line 18 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Slider HeightSlider;
         
@@ -65,7 +65,7 @@ namespace WpfApplication1 {
         #line hidden
         
         
-        #line 20 "..\..\MainWindow.xaml"
+        #line 21 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Border Weight;
         
@@ -73,7 +73,7 @@ namespace WpfApplication1 {
         #line hidden
         
         
-        #line 21 "..\..\MainWindow.xaml"
+        #line 22 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock WeightNumber;
         
@@ -81,9 +81,25 @@ namespace WpfApplication1 {
         #line hidden
         
         
-        #line 25 "..\..\MainWindow.xaml"
+        #line 26 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Slider WeightSlider;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 28 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBlock intBmi;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 29 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBlock dotBmi;
         
         #line default
         #line hidden
@@ -127,7 +143,7 @@ namespace WpfApplication1 {
             case 3:
             this.HeightSlider = ((System.Windows.Controls.Slider)(target));
             
-            #line 17 "..\..\MainWindow.xaml"
+            #line 18 "..\..\MainWindow.xaml"
             this.HeightSlider.ValueChanged += new System.Windows.RoutedPropertyChangedEventHandler<double>(this.HeightSlider_ValueChanged);
             
             #line default
@@ -142,11 +158,17 @@ namespace WpfApplication1 {
             case 6:
             this.WeightSlider = ((System.Windows.Controls.Slider)(target));
             
-            #line 25 "..\..\MainWindow.xaml"
+            #line 26 "..\..\MainWindow.xaml"
             this.WeightSlider.ValueChanged += new System.Windows.RoutedPropertyChangedEventHandler<double>(this.HeightSlider_ValueChanged);
             
             #line default
             #line hidden
+            return;
+            case 7:
+            this.intBmi = ((System.Windows.Controls.TextBlock)(target));
+            return;
+            case 8:
+            this.dotBmi = ((System.Windows.Controls.TextBlock)(target));
             return;
             }
             this._contentLoaded = true;

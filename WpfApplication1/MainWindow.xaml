@@ -8,6 +8,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <StackPanel Margin="30">
+            <!--Height-->
             <Canvas Width="400" Height="50" Background="LightGray">
                 <Border CornerRadius="10" Background="LightPink" x:Name="Height">
                     <TextBlock Canvas.Top="0" Canvas.Left="0" x:Name="HeightNumber" Width="80" TextAlignment="Center" Padding="0 5" >0</TextBlock>
@@ -23,7 +24,10 @@
             </Canvas>
 
             <Slider Minimum="0" Maximum="200" x:Name="WeightSlider" ValueChanged="HeightSlider_ValueChanged"></Slider>
-            <TextBlock>100</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="40" x:Name="intBmi">29</TextBlock>
+                <TextBlock FontSize="20" Margin="0 7 0 0" x:Name="dotBmi">.5</TextBlock>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>
